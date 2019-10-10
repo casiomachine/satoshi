@@ -9,12 +9,12 @@ A blockchain architecture for file backups.
 
 When a file gets appended to the blockchain:
 
-     readFile | Turn contents into base64 (in a unifying effort) | encrypt | deflate 
+     readFile | Turn contents into base64 | encrypt | deflate 
 
 
 When a file gets exported:
 
-     readBlockchain | inflate | decrypt | parse base64 with appropiate MIME-Type
+     readBlockchain | inflate | decrypt | parse base64
 
 
 ___
